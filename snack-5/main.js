@@ -4,6 +4,10 @@
 
 const array = [];
 
-for ( let i = 0; i <= 2; i++) {
+for ( let i = 0; i < 6; i++) {
     let userInput = prompt("Digita un numero");
+    if ( userInput % 2 === 1) {
+        array.push(userInput);
+    };
+    console.log(array);
 }

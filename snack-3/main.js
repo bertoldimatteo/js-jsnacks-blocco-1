@@ -3,6 +3,7 @@
 
 for ( let i = 0 ; i <= 9; i++) {
     const array = [];
-    let number = prompt("Scrivi un numero")[i];
-    array.push(number);
+    let number = array.push(prompt("Scrivi un numero"));
+    number =+ number;
+    console.log(number);
 }

@@ -9,5 +9,5 @@ for ( let i = 0; i < 6; i++) {
     if ( userInput % 2 === 1) {
         array.push(userInput);
     };
-    console.log(array);
-}
+};
+console.log(array);

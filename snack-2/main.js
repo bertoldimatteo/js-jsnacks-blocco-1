@@ -9,5 +9,5 @@ if ( firstWord.length < secondWord.length) {
 } else if ( secondWord.length < firstWord.length) {
     console.log(secondWord, firstWord)
 } else {
-    console.log(firstWord, secondWord);
+    console.log("Hanno la stessa lunghezza");
 };

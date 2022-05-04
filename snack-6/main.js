@@ -1,10 +1,11 @@
 // Inserisci un numero, se è pari stampa il numero, 
 // se è dispari stampa il numero successivo.
 
+let userInput = prompt("Digita un numero");
+let incremental = userInput++;
 
-for ( let i = 0; i < 6; i++) {
-    const userInput = prompt("Digita un numero");
-    if ( userInput % 2 === 0 ) {
-        console.log(userInput);
-    };
-};
+if ( userInput % 2 == 0 ) {
+    console.log(userInput);
+} else if ( userInput % 2 == 1) {
+    console.log(incremental);
+}

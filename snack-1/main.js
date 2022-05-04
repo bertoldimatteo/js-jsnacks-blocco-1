@@ -8,7 +8,7 @@ const firstNumber = prompt("Digita il primo numero:");
 const secondNumber = prompt("Digita il secondo numero:");
 
 if ( firstNumber > secondNumber) {
-    console.log("Primo numero maggiore");
+    console.log(firstNumber);
 } else if ( secondNumber > firstNumber ) {
-    console.log ("Secondo numero maggiore");
+    console.log (secondNumber);
 };

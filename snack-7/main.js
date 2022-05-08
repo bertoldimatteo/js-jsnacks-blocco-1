@@ -1,11 +1,20 @@
-// Generatore di "nomi cognomi" casuali: 
-// il Grande Gatsby ha  una lista di nomi e una lista di cognomi, 
-// e da queste vuole generare una falsa lista di invitati con nome e cognome.
+// Generatore di "nomi cognomi" casuali:  
+// il Grande Gatsby ha  una lista di nomi e una lista di cognomi,  
+// e da queste vuole generare una falsa lista di invitati con nome e cognome. 
 
-let names = ["Alberto","Marco","Luca","Federico"];
-let randomName = names.slice(Math.floor((Math.random() * 4) + 1);
+const names = ["Matteo","Federico","Michele"];
+const surnames = ["Bertoldi","Bauce","Urbani"];
+const listGuests = [];
+const invitations = 5;
 
-let surname = ["DeMedici","Filippi","Antoniazzi","Accrasi"];
-let randomSurnames = surname.slice(Math.floor((Math.random() * 4) + 1);
+while (listGuests.length < invitations) {
+    const randomNames = Math.floor(Math.random() * names.length);
+    const randomSurnames = Math.floor(Math.random() * surnames.length);
+    const newName = names[randomNames] + " " + surnames[randomSurnames];
 
-console.log(`${surname}${randomSurnames}`);
+    if (!listGuests.includes(newName)) {
+        listGuests.push(newName);
+    }
+}
+
+console.log(listGuests);
